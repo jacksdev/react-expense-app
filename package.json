@@ -8,7 +8,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build:dev": "webpack",
     "build:prod": "webpack -p --env production",
-    "start": "webpack-dev-server --open --history-api-fallback"
+    "start-dev": "webpack-dev-server --open --history-api-fallback",
+    "start": "node server/server.js",
+    "heroku-postbuid": "npm run build:prod"
   },
   "author": "yevgeny frolov",
   "license": "ISC",
@@ -31,6 +33,7 @@
   "dependencies": {
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.5",
+    "express": "^4.16.3",
     "live-server": "^1.2.0",
     "moment": "^2.22.2",
     "react": "^16.4.1",
