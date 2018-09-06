@@ -9,7 +9,7 @@
     "build:dev": "webpack",
     "build:prod": "webpack -p --env production",
     "start": "node server/server.js",
-    "heroku-postbuid": "npm run build:prod"
+    "heroku-postbuild": "npm run build:prod"
   },
   "author": "yevgeny frolov",
   "license": "ISC",
