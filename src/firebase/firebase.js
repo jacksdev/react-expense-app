@@ -18,11 +18,13 @@ firebase.initializeApp(config);
 
 const database = firebase.database();
 
-database.ref().set({
-  work: 'billy',
-  age: 13,
-  location:{
-    lit:34,
-    bit:4555
-  }
-})
+
+export { firebase, database as default}
+// database.ref().set({
+//   work: 'billy',
+//   age: 13,
+//   location:{
+//     lit:34,
+//     bit:4555
+//   }
+// })
