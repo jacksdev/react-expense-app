@@ -4,12 +4,9 @@ import ExpenseList from './ExpenseList';
 import ExpenseTotal from './ExpenseTotal'
 
 const ExpenseDashboard = () => (
-  <div style={{margin:20}}>
-    This is the Dashboard page.
-    <br />
-    <ExpenseListFilters />
-    <br />
+  <div>
     <ExpenseTotal />
+    <ExpenseListFilters />
     <ExpenseList />
   </div>
 );

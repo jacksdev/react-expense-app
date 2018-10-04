@@ -9,7 +9,7 @@ const LoginPage = ({ startLogin }) => (
       <p>
         Mangae your expenses quickly and easily with this app.
       </p>
-      <button onClick={startLogin}>Log-In</button>
+      <button className="button" onClick={startLogin}>Log-In with Google</button>
     </div>
 
   </div>
