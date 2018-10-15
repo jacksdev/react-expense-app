@@ -43,9 +43,9 @@ module.exports = (env) => {
     ],
     devtool: isProduction ? 'source-map' : 'inline-source-map',
     devServer: {
-      contentBase: path.join(__dirname , 'public'),
+      contentBase: path.join(__dirname , '/public'),
       historyApiFallback: true,
-      publicPath: 'dist/'
+      publicPath: '/dist/'
     }
   }
 }

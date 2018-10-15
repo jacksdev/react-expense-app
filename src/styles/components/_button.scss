@@ -16,7 +16,18 @@
 .button--link{
   background: none;
 }
+.button-group {
+  display: flex;
+}
 
 .button--secondary{
   background: #888888;
+  font-size: $font-size-medium;
+  z-index: 10000;
+  transition: background .3s ease;
+  margin-right: $s-size;
+  margin-top: $s-size;
+  &:hover {
+    background: $blue;
+  }
 }

@@ -14,20 +14,23 @@ const ExpenseItem = ({
   createdAt
 }) => (
   <div>
-    <Link className="list-item" to={`/edit/${id}`}>
-    <div>
-      <h3 className="item-list__title">{description}</h3>
-      <span className="item-list__subtitle">{moment(createdAt).format("dddd, MMM Do YYYY")}</span>
-    </div>
+    <div className="list-item">
+      <div>
+        <h3 className="item-list__title">{description}</h3>
+        <span className="item-list__subtitle">{moment(createdAt).format("dddd, MMM Do YYYY")}</span>
+        <div className="button-group">
+          <Link to={`/edit/${id}`}>
+            <button className="button button--secondary">Edit</button>
+          </Link>
 
-    <div>
-      <h3 className="item-list__data">{numeral(amount / 100).format('$0,0.00')}</h3>
-    </div>
-    </Link>
-    <div>
-      <button className="button button--secondary" onClick={() => {
-        dispatch(startRemoveExpense({ id }));
-      }}>Remove</button>
+          <button className="button button--secondary" onClick={() => {
+            dispatch(startRemoveExpense({ id }));
+          }}>Remove</button>
+        </div>
+      </div>
+      <div>
+        <h3 className="item-list__data">{numeral(amount / 100).format('$0,0.00')}</h3>
+      </div>
     </div>
   </div>
 )
