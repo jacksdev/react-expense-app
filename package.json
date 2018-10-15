@@ -7,7 +7,7 @@
     "serve": "live-server public/",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build:dev": "webpack",
-    "build": "webpack -p --env production",
+    "build:prod": "webpack -p --env production",
     "dv": "webpack-dev-server --open --history-api-fallback",
     "start": "node server/server.js",
     "heroku-postbuild": "npm run build:prod"
